@@ -1,5 +1,60 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-family: "SuisseIntl",sans-serif;
+    font-weight: 800;
+    line-height: .93;
+
+}
+
+#nieuws_item_list {
+    padding: 1.5rem;
+    list-style: none;
+}
+
+.hashtag {
+    font-size: 0.625rem;
+    font-family: "SuisseIntl",sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    display: inline-block;
+    margin-right: .75rem;
+    padding: .4375rem .3125rem;
+    color: #fff;
+    text-transform: uppercase;
+    list-style: none;
+    background-color: #413e3e;
+    
+}
+
+.nieuws_item {
+    max-width: 100%;
+}
+
+.nieuws_item img {
+    width: 100%;
+    background: #eee;
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+
+.nieuws_item_content {
+    line-height: 1.33;
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-family: sans-serif;
 }
 
