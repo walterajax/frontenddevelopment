@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="nl">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Walter van Koesveld">
@@ -16,17 +16,25 @@
 
     </header>
     <main>
-        <ul id='top_nieuws'>
-            <li id="top_nieuws_nieuwst">
-               <img id="top_nieuws_tumbnail" src="https://www.ajax.nl/media/mljnotcn/thumbpersco.jpg">
-                <h2>Ten Hag vol vertrouwen: 'Zit muziek in de manier van voetballen'</h2>
-                <button>lees het artikel</button>
-            </li>
-            <li id='top_nieuws_webshop'>
-                <h2>Simply beautiful</h2>
-                <p>New Home jersey</p>
-                <button>Shop nu</button>
-            </li>
+        <section class="nieuws_header">
+            <section class="nieuws_header_content">
+                <h2 class="nieuws_header_title">Ajax boekt als gevolg van transfers een nettowinst van €20,7 miljoen</h2>
+                <a class="nieuws_header_link" href="">Lees artikel</a>
+            </section>
+        </section>
+        <section class="win_actie">
+            <section class="win_actie_content">
+                <h2 class="win_actie_title">Win een geheel verzorgde vakantie naar Curaçao</h2>
+                <h3 class="win_actie_subtitle">Inclusief vlucht en hotel</h3>
+                <a class="win_actie_link" href="">Lees artikel</a>
+            </section>
+        </section>
+
+        <ul class="categories">
+            <li class="categories_name categories_name--active">Actueel</li>
+            <li class="categories_name">Video</li>
+            <li class="categories_name">Wedtrijden</li>
+            <li class="categories_name">Meer</li>
         </ul>
         <ul id='nieuws_item_list'>
             <li class="nieuws_item">
@@ -34,7 +42,7 @@
                     <img src="https://www.ajax.nl/media/zhel000t/butler.jpg?quality=85&rnd=132440472370270000"></section>
                 <h2>Inside Ajax vanaf vrijdag in een nieuw jasje op Ziggo Sport</h2>
                 <p class="nieuws_item_content">Inside Ajax is vanaf vrijdag weer terug. Het programma op Ziggo Sport is in een nieuw jasje gestoken en wordt gepresenteerd door...</p>
-                <!-- INLINE POEPGAT -->
+
                 <section class='nieuws_item_footer'>
                     <p class="hashtag">#insideajax</p>
                     <a href="#"> <img src="images/ic-share.svg" alt="sharenislief"></a>
@@ -45,7 +53,6 @@
                     <img src="https://www.ajax.nl/media/zhel000t/butler.jpg?quality=85&rnd=132440472370270000"></section>
                 <h2>Inside Ajax vanaf vrijdag in een nieuw jasje op Ziggo Sport</h2>
                 <p class="nieuws_item_content">Inside Ajax is vanaf vrijdag weer terug. Het programma op Ziggo Sport is in een nieuw jasje gestoken en wordt gepresenteerd door...</p>
-                <!-- INLINE POEPGAT -->
                 <section class='nieuws_item_footer'>
                     <p class="hashtag">#insideajax</p>
                     <a href="#"> <img src="images/ic-share.svg" alt="sharenislief"></a>
@@ -56,20 +63,144 @@
                     <img src="https://www.ajax.nl/media/zhel000t/butler.jpg?quality=85&rnd=132440472370270000"></section>
                 <h2>Inside Ajax vanaf vrijdag in een nieuw jasje op Ziggo Sport</h2>
                 <p class="nieuws_item_content">Inside Ajax is vanaf vrijdag weer terug. Het programma op Ziggo Sport is in een nieuw jasje gestoken en wordt gepresenteerd door...</p>
-                <!-- INLINE POEPGAT -->
                 <section class='nieuws_item_footer'>
                     <p class="hashtag">#insideajax</p>
                     <a href="#"> <img src="images/ic-share.svg" alt="sharenislief"></a>
                 </section>
             </li>
         </ul>
-
-
     </main>
     <footer>
-
+        <section class="footer_logo">
+            <img src="images/logo-ajax-default.svg" alt="">
+        </section>
+        <nav id="footer_nav">
+            <ul class="footer_nav_list">
+                <li class="footer_nav_list_item">
+                    <ul class="footer_nav_sub_list">
+                        <h4 class="footer_nav_sub_list_item">De club</h4>
+                        <li class="footer_nav_sub_list_item">Stadion</li>
+                        <li class="footer_nav_sub_list_item">Historie</li>
+                        <li class="footer_nav_sub_list_item">Pers</li>
+                        <li class="footer_nav_sub_list_item">Organisatie</li>
+                        <li class="footer_nav_sub_list_item">Maatschappelijk</li>
+                        <li class="footer_nav_sub_list_item">Jeugdopleiding</li>
+                    </ul>
+                </li>
+                <li class="footer_nav_list_item">
+                    <ul class="footer_nav_sub_list">
+                        <h4 class="footer_nav_sub_list_item">Fancare</h4>
+                        <li class="footer_nav_sub_list_item">Veelgestelde vragen</li>
+                        <li class="footer_nav_sub_list_item">mijn.AJAX</li>
+                    </ul>
+                </li>
+                <li class="footer_nav_list_item">
+                    <ul class="footer_nav_sub_list">
+                        <h4 class="footer_nav_sub_list_item">Teams</h4>
+                        <li class="footer_nav_sub_list_item">Ajax 1</li>
+                        <li class="footer_nav_sub_list_item">Jong Ajax</li>
+                        <li class="footer_nav_sub_list_item">Ajax vrouwen</li>
+                    </ul>
+                </li>
+                <li class="footer_nav_list_item">
+                    <ul class="footer_nav_sub_list">
+                        <h4 class="footer_nav_sub_list_item">Meer</h4>
+                        <li class="footer_nav_sub_list_item">Ticketinfo</li>
+                        <li class="footer_nav_sub_list_item">Mindervalide</li>
+                        <li class="footer_nav_sub_list_item">Vacatures</li>
+                        <li class="footer_nav_sub_list_item">Fancare</li>
+                        <li class="footer_nav_sub_list_item">Fanshop</li>
+                        <li class="footer_nav_sub_list_item">Privacy</li>
+                        <li class="footer_nav_sub_list_item">Disclaimer</li>
+                        <li class="footer_nav_sub_list_item">Disclosure policy</li>
+                        <li class="footer_nav_sub_list_item">Coronamaatregelen</li>
+                        <li class="footer_nav_sub_list_item">Op de toekomst</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="nieuwsbrief">
+            <h4 class="nieuwsbrief_title">Nieuwsbrief</h4>
+            <p class="nieuwsbrief_subtext">Schrijf je in voor de nieuwsbrief</p>
+            <a class="nieuwsbrief_button" href="">Inschrijven</a>
+        </section>
+        <section class="social">
+            <h4 class="social_title">Social</h4>
+            <ul class="social_list">
+                <li class="social_list_item">
+                    <a class="social_link" href="">
+                        <img class="social_img" src="images/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_link" href="">
+                        <img class="social_img" src="images/instagram.svg" alt="">
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_link" href="">
+                        <img class="social_img" src="images/facebook.svg" alt="">
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_link" href="">
+                        <img class="social_img" src="images/youtube.svg" alt="">
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_link" href="">
+                        <img class="social_img" src="images/tiktok.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="partners">
+            <h4 class="partners_title">Social</h4>
+            <ul class="partners_list">
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/ziggo.svg" alt="">
+                    </a>
+                </li>
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/addidas.svg" alt="">
+                    </a>s
+                </li>
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/abn-amro.svg" alt="">
+                    </a>
+                </li>
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/acronis_logo.svg" alt="">
+                    </a>
+                </li>
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/bud.svg" alt="">
+                    </a>
+                </li>
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/cst.svg" alt="">
+                    </a>
+                </li>
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/curacao.svg" alt="">
+                    </a>
+                </li>
+                <li class="partners_list_item">
+                    <a class="partners_link" href="">
+                        <img class="partners_img" src="images/vriendenloterij.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
     </footer>
     <script src="scripts/script.js"></script>
 </body>
-    
+
 </html>
