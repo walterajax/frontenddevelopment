@@ -22,25 +22,131 @@ h2 {
     font-weight: 800;
     line-height: .93;
 }
-
-#nieuws_item_list {
-    padding: 1.5rem;
-    list-style: none;
+header {
+    display: block;
+}
+#menu {
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: #C3012F;
+    border-bottom: .0625rem solid #fff;
+    z-index: 2;
+}
+#menu > ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+#menu > ul > li {
+
+}
+#menu > ul > li > img {
+    max-height: 2rem;
+}
+#menu > ul > li > a {
+    color: white;
+    border: .0625rem solid #fff;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: "suisseIntl", sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 2px 12px;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  #nieuws_item_list {
-    flex-direction: column;
-  }
+#hamburger_menu {
+    transition: all .35s ease;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    position: absolute;
+    background-color: #C3012F;
+    z-index: 1;
+
 }
-.btn {
+#hamburger_menu > ul {
+    list-style: none;
+}
+#hamburger_menu > ul > li:first-of-type {
+    padding-bottom: .5rem;
+    font-weight: 600;
+    font-family: "suisseIntl", sans-serif;
+    color: white;
+
+}
+#hamburger_menu > ul > li > a {
+    text-decoration: none;
+    padding-bottom: .5rem;
+    font-weight: 300;
+    font-family: "suisseIntl", sans-serif;
+    color: white;
+}
+.hide {
+    top: -20rem;
+}
+.show {
+    top: 3.5rem;
+}
+#nieuws_items {
+    padding: 1.5rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+    #nieuws_items {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    #nieuws_items {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+#nieuws_items > li {
+    width: 100%;
+    padding-bottom: 1rem;
+/*    overflow: hidden;*/
+    flex-grow: 1;
+    position: relative;
+}
+#nieuws_items > li > img {
+    width: 100%;
+}
+#nieuws_items > li > .like_button {
+    padding: .25rem;
     background-color: white;
-    color: black;
+    border: 2px solid black;
+    border-radius: 5rem;
+    width: 3rem;
+    position: absolute;
+    top: 2px;
+    left: 2px;
 }
 
-.hashtag {
+#nieuws_items > li > p {
+    line-height: 1.33;
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-family: "SuisseIntl", sans-serif;
+}
+#nieuws_items > li > footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    border-bottom: .0625rem solid #c2002f;
+    padding: 0;
+    padding-bottom: .625rem;
+}
+#nieuws_items > li > footer > p {
     font-size: 0.625rem;
     font-family: "SuisseIntl", sans-serif;
     font-weight: 300;
@@ -54,38 +160,9 @@ h2 {
     background-color: #413e3e;
 }
 
-.nieuws_item {
-    max-width: 100%;
-    padding-bottom: 1rem;
-}
-
-.nieuws_item_tumbnail {
-    width: 100%;
-    background: #eee;
-    position: relative;
-    margin-bottom: 1.6rem;
-    overflow: hidden;
-}
-
-.nieuws_item_tumbnail>img {
-    Height: 16.25rem;
-    margin-left: -4rem;
-}
-
-.nieuws_item_content {
-    line-height: 1.33;
-    margin-top: 1rem;
-    font-size: 1.125rem;
-    font-family: "SuisseIntl", sans-serif;
-}
-
-.nieuws_item_footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 1rem;
-    border-bottom: .0625rem solid #c2002f;
-    padding-bottom: .625rem;
+.btn {
+    background-color: white;
+    color: black;
 }
 
 .categories {
@@ -94,7 +171,7 @@ h2 {
     padding: 2rem 1.5rem 1.5rem;
 }
 
-.categories_name {
+.categories > li {
     margin-right: 1.875rem;
     display: block;
     font-size: 1rem;
@@ -108,36 +185,32 @@ h2 {
     border-bottom: .125rem solid transparent;
 }
 
-.categories_name--active {
+.categories > li:first-of-type {
     border-bottom: .125rem solid #c2002f;
 }
 
 .nieuws_header {
-    background-image: url('../images/header_img.jpg');
+    background: url('../images/header_img.jpg') no-repeat;
+    position: relative;
+    background-size: cover;
     max-width: 100vw;
     overflow: hidden;
-    padding: 1.5rem 0;
-    margin: 1.5rem;
-    position: relative;
     height: 23rem;
-}
-.nieuws_header_content {
-    position: relative;
-    height: 100%;
-    width: 100%;
+    margin: 1.5rem;
+    margin-top: 6rem;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.nieuws_header_title {
-    position: absolute;
-    top: 0;
+.nieuws_header > h2 {
     color: white;
     width: 15rem;
 }
-.nieuws_header_link {
+.nieuws_header > a {
     background-color: white;
-    position: absolute;
-    bottom: 0;
     min-height: 2rem;
+    width: max-content;
     padding: .5rem .75rem;
     font-size: 1rem;
     font-family: "SuisseIntl",sans-serif;
@@ -146,36 +219,36 @@ h2 {
     text-decoration: none;
 }
 
+
 .win_actie {
-    background-image: url('../images/curacao.jpg');
+    
+}
+.win_actie {
+    background: url('../images/curacao.jpg') no-repeat;
+    position: relative;
+    background-size: cover;
     max-width: 100vw;
     overflow: hidden;
-    padding: 0 0 1.5rem 0;
+    height: 23rem;
     margin: 1.5rem;
-    position: relative;
-    height: 13rem;
-}
-.win_actie_content {
-    position: relative;
-    height: 100%;
-    width: 100%;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.win_actie_title {
+.win_actie > h2 {
     color: white;
 }
-.win_actie_subtitle {
+.win_actie > h3 {
     color: white;
-    margin-top: 10px;
     font-size: 1.125rem;
     font-family: "SuisseIntl",sans-serif;
     font-weight: 300;
 }
-.win_actie_link {
+.win_actie > a {
     background-color: white;
-    position: absolute;
-    bottom: 0;
     min-height: 2rem;
+    width: max-content;
     padding: .5rem .75rem;
     font-size: 1rem;
     font-family: "SuisseIntl",sans-serif;
@@ -188,52 +261,49 @@ footer {
     padding: 1.5rem;
 }
 
-#footer_nav {
-}
-
-.footer_nav_list {
-    display: flex;
-    flex-direction: column;
+footer > nav {
     list-style: none;
-    flex-wrap: wrap;
-    height: 50vh;
     justify-content: space-between;
 }
 
-.footer_nav_list_item {
-    padding: 1rem 0;
-}
-
-.footer_nav_sub_list {
+footer > nav > ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
     list-style: none;
 }
-.footer_nav_sub_list > h4 {
+footer > nav > ul > li {
+    padding: 1rem 0;
+    width: 50%;
+}
+
+footer > nav > ul > li > ul {
+    list-style: none;
+}
+footer > nav > ul > li > ul > h4 {
     font-size: 1rem;
     font-family: "SuisseIntl",sans-serif;
     font-weight: 600;
     line-height: 1.25;
 }
-.footer_nav_sub_list_item {
+footer > nav > ul > li > ul > li {
     font-size: 1rem;
     font-family: "SuisseIntl",sans-serif;
     font-weight: 300;
     line-height: 1.25;
-    
 }
 
 .nieuwsbrief {
     font-family: "SuisseIntl",sans-serif;
-    
 }
-.nieuwsbrief_title {
+.nieuwsbrief > h4 {
     font-family: "SuisseIntl",sans-serif;
     
 }
-.nieuwsbrief_subtext {
+.nieuwsbrief > p {
     font-family: "SuisseIntl",sans-serif;
     margin: 0 0 .875rem;
 }
-.nieuwsbrief_button {
+.nieuwsbrief > a {
     padding: .5rem .75rem;
     font-size: 1rem;
     font-family: "SuisseIntl",sans-serif;
@@ -246,33 +316,30 @@ footer {
 .social {
     margin: 1rem 0;
 }
-.social_title {
+.social > h4 {
     font-family: "SuisseIntl",sans-serif;
 }
-.social_list {
+.social > ul {
     margin-top: 1rem;
     list-style: none;
     display: flex;
     flex-direction: row;
 }
-.social_list_item {
+.social > ul > li {
     margin-right: 1rem;
 }
 
-.partners {
-    
-}
-.partners_title {
+.partners > h4 {
     font-family: "SuisseIntl",sans-serif;
 }
-.partners_list {
+.partners > ul {
     margin-top: 1rem;
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.partners_list_item {
+.partners > ul > li {
     margin-right: 1rem;
     margin-bottom: 1rem;
 }

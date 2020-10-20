@@ -30,13 +30,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
-
+Minder gebruik maken van classes, maak gebruik van een grid bij de footer.
 
 
 ## Voortgang 1 (week 3)
 
-
+Goed bezig wel vaart maken met de detailpagina
 
 ### Stand van zaken
 
