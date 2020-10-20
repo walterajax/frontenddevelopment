@@ -31,7 +31,6 @@ header {
     padding: 1rem;
     width: 100%;
     background-color: #C3012F;
-    border-bottom: .0625rem solid #fff;
     z-index: 2;
 }
 #menu > ul {
@@ -219,10 +218,6 @@ header {
     text-decoration: none;
 }
 
-
-.win_actie {
-    
-}
 .win_actie {
     background: url('../images/curacao.jpg') no-repeat;
     position: relative;
@@ -255,6 +250,106 @@ header {
     font-weight: 600;
     color: black;
     text-decoration: none;
+}
+
+main > article {
+    padding-top: 4rem;
+}
+main > article > h1 {
+    color: white;
+    font-family: "SuisseIntl",sans-serif;
+    font-weight: 800;
+    line-height: .92;
+    padding: 1.875rem 1.5rem;
+    background-color: #C3012F;
+    font-size: 2.25rem;
+}
+main > article > h3 {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    font-family: "SuisseIntl",sans-serif;
+    font-weight: 600;
+    padding: 0 1.5rem;
+    line-height: 1.33;
+}
+
+main > article > img:first-of-type {
+    padding: 0;
+    margin-top: 0;
+    max-height: 30rem;
+}
+
+main > article > img {
+    padding: 0 1.5rem;
+    max-width: 100%;
+    margin-top: 1.5rem;
+}
+main > article > p:first-of-type {
+    font-size: 1.125rem;
+}
+main > article > p {
+    font-family: "SuisseIntl",sans-serif;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+main > article > img + span {
+    margin-top: .5625rem;
+    font-size: .625rem;
+    font-family: "SuisseIntl",sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 0 1.5rem;
+    display: block;
+}
+main > article > .score {
+    margin-top: 0;
+    font-family: "SuisseIntl",sans-serif;
+    padding: 0 1.5rem;
+    font-weight: 300;
+    display: block;
+}
+main > article > footer {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+main > article > footer > span {
+    display: block;
+    font-family: "SuisseIntl",sans-serif;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    font-family: "SuisseIntl",sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+}
+main > article > footer > section {
+    width: calc(100% - 3rem);
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    padding-bottom: .625rem;
+    border-bottom: .0625rem solid #c2002f;
+}
+main > article > footer > section > p {
+    font-size: 0.625rem;
+    font-family: "SuisseIntl", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    display: inline-block;
+    margin-right: .75rem;
+    padding: .4375rem .3125rem;
+    color: #fff;
+    text-transform: uppercase;
+    list-style: none;
+    background-color: #413e3e;
+}
+main > h2 {
+    padding: 0 1.5rem;
+    margin-top: 4rem;
 }
 
 footer {
@@ -342,4 +437,65 @@ footer > nav > ul > li > ul > li {
 .partners > ul > li {
     margin-right: 1rem;
     margin-bottom: 1rem;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    main > article > p:first-of-type {
+        font-size: 1.5rem;
+        padding: 0 10rem;
+    }
+    main > article > p {
+        font-size: 1.125rem;
+        padding: 0 10rem;
+    }
+    main > article > h1 {
+        padding: 4rem 10rem 2rem 10rem;
+        font-size: 3.25rem;
+        font-weight: 800;
+    }
+    main > article > h3 {
+        font-weight: 600;
+        padding: 0 10rem;
+    }
+    main > article > img {
+        padding: 0 10rem;
+    }
+    main > article > footer {
+        padding: 0 10rem;
+    }
+    main > article > .score {
+        padding: 0 10rem;
+    }
+    main > article > footer > span {
+        padding: 0;
+    }
+    main > article > footer > section {
+        width: 100%;
+    }
+    main > article > img:first-of-type {
+        object-fit: cover;
+        -o-object-position: center top;
+        object-position: center top;
+        height: 100%;
+        width: 100%;
+    }
+    main > article > img + span {
+        padding: 0 10rem;
+        font-size: 1rem;
+    }
+    main > article > p {
+        max-width: 70rem;
+    }
+    main > h2 {
+        font-size: 1.75rem;
+        padding: 0 10rem;
+    }
+    main > #nieuws_items {
+        padding: 0 10rem;
+    }
+    footer {
+        padding: 0 10rem;
+    }
 }

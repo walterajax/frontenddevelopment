@@ -1,5 +1,5 @@
 // JavaScript Document
-var url = 'https://walterajax.github.io/frontenddevelopment/'
+var url = 'http://127.0.0.1:58081/'
 
 var hamburgerIcon = document.querySelector('#hamburger_icon');
 var hamburgerMenu= document.querySelector('#hamburger_menu');
