@@ -95,20 +95,12 @@ a {
     top: 3.5rem;
 }
 #nieuws_items {
+    margin-top: 1.5rem;
     padding: 1.5rem;
     list-style: none;
     display: grid;
     grid-template-columns: 100%;
     grid-gap: 10px;
-    
-}
-.header_nieuws_items {
-    padding: 1.5rem;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 10px;
-    
 }
 
 /* verschillende device groottes */
@@ -144,7 +136,7 @@ a {
     width: 100%;
     max-height: 15rem;
 }
-#nieuws_items > li > a > .like_button {
+#nieuws_items > li > .like_button {
     padding: .25rem;
     background-color: white;
     border: 2px solid black;
@@ -215,14 +207,11 @@ a {
 
 .nieuws_header {
     background: url('../images/header_img.jpg') no-repeat;
-    background-origin: content-box;
     position: relative;
     background-size: cover;
-    max-width: 70vw;
     overflow: hidden;
     height: 23rem;
-    margin: 1.5rem;
-    margin-top: 6rem;
+    margin: 6rem 0 1.5rem;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -246,13 +235,11 @@ a {
 
 .win_actie {
     background: url('../images/curacao.jpg') no-repeat;
-    background-origin: content-box;
     position: relative;
     background-size: cover;
-    max-width: 30vw;
     overflow: hidden;
     height: 23rem;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -469,6 +456,9 @@ footer > nav > ul > li > ul > li {
 
 
 @media only screen and (min-width: 800px) {
+    #header_nieuws_items {
+        padding: 0 10rem;
+    }
     main > article > p:first-of-type {
         font-size: 1.5rem;
         padding: 0 10rem;
