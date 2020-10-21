@@ -20,38 +20,38 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -screenshot(s) van je eindresultaat-
 
+![-c-](images/1.png)
+![-c-](images/2.png)
+![-c-](images/3.png)
+![-c-](images/4.png)
+![-c-](images/5.png)
+
 
 
 ## Voortgang 3 (week 6)
-
--same as voortgang 1-
-
+Meer gebruik gemaakt van selectoren.
 
 
 ## Voortgang 2 (week 5)
 
-Minder gebruik maken van classes, maak gebruik van een grid bij de footer.
+Ik heb last van classerites, deze moet ik er uit werken en ik moet meer met selectoren werken.
 
 
 ## Voortgang 1 (week 3)
 
-Goed bezig wel vaart maken met de detailpagina
+Goed bezig wel vaart maken met de detailpagina, liep vast met de achtergrond van 1 van de 'kaarten' op de homepagina. Deze wilde niet mee schalen, na een tijdje kloten die toch wel werkend gekregen.
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
 
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent-
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+
 
 
 
