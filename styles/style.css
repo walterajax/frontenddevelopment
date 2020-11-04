@@ -59,9 +59,13 @@ a {
     font-weight: 600;
     line-height: 1.25;
     padding: 2px 12px;
+    transition: .15s ease all;
     text-decoration: none;
 }
-
+#menu > ul > li > a:hover {
+    color: black;
+    background-color: white;
+}
 #hamburger_menu {
     transition: all .35s ease;
     padding: 1.5rem 1rem;
@@ -136,6 +140,13 @@ a {
     width: 100%;
     max-height: 15rem;
 }
+#nieuws_items > li > a > img:hover + h2 {
+    opacity: .7;
+}
+#nieuws_items > li > a > img {
+    width: 100%;
+    max-height: 15rem;
+}
 #nieuws_items > li > .like_button {
     padding: .25rem;
     background-color: white;
@@ -200,6 +211,9 @@ a {
     white-space: nowrap;
     border-bottom: .125rem solid transparent;
 }
+.categories > li:hover {
+    border-bottom: .125rem solid #ff5c83;
+}
 
 .categories > li:first-of-type {
     border-bottom: .125rem solid #c2002f;
@@ -231,6 +245,9 @@ a {
     font-weight: 600;
     color: black;
     text-decoration: none;
+}
+.nieuws_header > a:hover {
+    color: rgba(0,0,0,.7); 
 }
 
 .win_actie {
@@ -264,6 +281,9 @@ a {
     font-weight: 600;
     color: black;
     text-decoration: none;
+}
+.win_actie > a:hover {
+    color: rgba(0,0,0,.7); 
 }
 
 main > article {
@@ -458,6 +478,21 @@ footer > nav > ul > li > ul > li {
 @media only screen and (min-width: 800px) {
     #header_nieuws_items {
         padding: 0 10rem;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: flex-start;
+        margin-top: 10rem;
+        max-height: 60rem;
+    }
+    .nieuws_header {
+        width: 50%;
+        margin-right: 1rem;
+    }
+    .win_actie {
+        width: 50%;
+    }
+    .win_actie:last-of-type {
+        margin-top: 6rem
     }
     main > article > p:first-of-type {
         font-size: 1.5rem;
